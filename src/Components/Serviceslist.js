@@ -1,18 +1,41 @@
 import React from 'react';
+import flouride from '../assets/images/fluoride.png';
+import cavity from '../assets/images/cavity.png';
+import teeth from '../assets/images/whitening.png';
 
 const Serviceslist = () => {
     return (
-        <div>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 px-12'>
             <div class="card w-96 bg-base-100 shadow-xl">
                 <figure class="px-10 pt-10">
-                    <img src="https://placeimg.com/400/225/arch" alt="Shoes" class="rounded-xl" />
+                    <img src={flouride} alt="Shoes" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
-                    <h2 class="card-title">Shoes!</h2>
+                    <h2 class="card-title">Fluoride Treatment</h2>
                     <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div class="card-actions">
-                        <button class="btn btn-primary">Buy Now</button>
-                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                    <img src={cavity} alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">Cavity Filling</h2>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    
+                </div>
+            </div>
+
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                    <img src={teeth} alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">Teeth Whitening</h2>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    
                 </div>
             </div>
         </div>
